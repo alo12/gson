@@ -368,6 +368,7 @@ public final class TypeAdapters {
         in.nextNull();
         return null;
       case NUMBER:
+      case STRING:
         return new LazilyParsedNumber(in.nextString());
       default:
         throw new JsonSyntaxException("Expecting number, got: " + jsonToken);
@@ -805,7 +806,7 @@ public final class TypeAdapters {
           constantToName.put(constant, name);
         }
       } catch (NoSuchFieldException e) {
-        throw new AssertionError("Missing field in " + classOfT.getName(), e);
+        throw new AssertionError(e);
       }
     }
     @Override public T read(JsonReader in) throws IOException {

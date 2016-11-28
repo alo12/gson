@@ -62,7 +62,7 @@ Note: Delete the `disabled_` prefix to run these tests. We use this prefix to pr
 
 ## <a name="TOC-Gson-Users"></a>Gson Users
 
-Gson was originally created for use inside Google where it is currently used in a number of projects. It is now used by a number of public projects and companies. See details [here](https://sites.google.com/site/gson/gson-users).
+Gson was originally created for use inside Google where it is currently used in a number of projects. It is now used by a number of public projects and companies.
 
 ## <a name="TOC-Using-Gson"></a>Using Gson
 
@@ -79,7 +79,7 @@ To use Gson with Maven2/3, you can use the Gson version available in Maven Centr
     <dependency>
       <groupId>com.google.code.gson</groupId>
       <artifactId>gson</artifactId>
-      <version>2.6.2</version>
+      <version>2.8.0</version>
       <scope>compile</scope>
     </dependency>
 </dependencies>
@@ -307,7 +307,7 @@ You can also find source code for some commonly used classes such as JodaTime at
 Sometimes default representation is not what you want. This is often the case when dealing with library classes (DateTime, etc).
 Gson allows you to register your own custom serializers and deserializers. This is done by defining two parts:
 
-* Json Serialiers: Need to define custom serialization for an object
+* Json Serializers: Need to define custom serialization for an object
 * Json Deserializers: Needed to define custom deserialization for a type
 
 * Instance Creators: Not needed if no-args constructor is available or a deserializer is registered
@@ -655,7 +655,7 @@ In addition Gson's object model and data binding, you can use Gson to read from 
 
 ## <a name="TOC-Issues-in-Designing-Gson"></a>Issues in Designing Gson
 
-See the [Gson design document](https://sites.google.com/site/gson/gson-design-document "Gson design document") for a discussion of issues we faced while designing Gson. It also include a comparison of Gson with other Java libraries that can be used for Json conversion.
+See the [Gson design document](https://github.com/google/gson/blob/master/GsonDesignDocument.md "Gson design document") for a discussion of issues we faced while designing Gson. It also include a comparison of Gson with other Java libraries that can be used for Json conversion.
 
 ## <a name="TOC-Future-Enhancements-to-Gson"></a>Future Enhancements to Gson
 

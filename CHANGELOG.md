@@ -1,6 +1,22 @@
 Change Log
 ==========
 
+## Version 2.8
+_2016-10-26_  [GitHub Diff](https://github.com/google/gson/compare/gson-parent-2.7...gson-parent-2.8.0)
+ * New: `TypeToken.getParameterized()` and `TypeToken.getArray()` make it easier to
+   register or look up a `TypeAdapter`.
+ * New: `@JsonAdapter(nullSafe=true)` to specify that a custom type adapter handles null.
+
+## Version 2.7
+_2016-06-14_  [GitHub Diff](https://github.com/google/gson/compare/gson-parent-2.6.2...gson-parent-2.7)
+ * Added support for JsonSerializer/JsonDeserializer in @JsonAdapter annotation
+ * Exposing Gson properties excluder(), fieldNamingStrategy(), serializeNulls(), htmlSafe()
+ * Added JsonObject.size() method
+ * Added JsonWriter.value(Boolean value) method
+ * Using ArrayDeque, ConcurrentHashMap, and other JDK 1.6 features
+ * Better error reporting
+ * Plenty of other bug fixes
+
 ## Version 2.6.2
 _2016-02-26_  [GitHub Diff](https://github.com/google/gson/compare/gson-parent-2.6.1...gson-parent-2.6.2)
  * Fixed an NPE bug with @JsonAdapter annotation
